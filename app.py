@@ -10,6 +10,20 @@
 """
 
 import os
+
+# Настройка переменных окружения, если они отсутствуют
+if 'SESSION_SECRET' not in os.environ:
+    os.environ['SESSION_SECRET'] = '4ErklCEQDRRSg3DjhLTKwhn+pRVJkgLDytI37HwTuCC4hT4Rr2AyZThhUaBeb/kEyuJiCaD5LGkBul/6bnFDIA=='
+    
+if 'TELEGRAM_API_ID' not in os.environ:
+    os.environ['TELEGRAM_API_ID'] = '28795142'
+    
+if 'TELEGRAM_API_HASH' not in os.environ:
+    os.environ['TELEGRAM_API_HASH'] = 'd60e99137c547f6ce3c9599a8a17a572'
+    
+if 'FLOWER_PASSWORD' not in os.environ:
+    os.environ['FLOWER_PASSWORD'] = 'гуцулятко'
+
 import json
 import logging
 import time
